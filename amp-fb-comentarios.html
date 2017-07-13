@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Facebook comentarios</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
+<style>
+body {
+  background-color:;
+  margin:0;
+  padding:0;
+  color:#212121;
+  font-family: Roboto, Arial, sans-serif;
+  font-size:15px;
+}
+.fb_hide_iframes iframe {
+    position: relative;
+    left: 0px !important;
+    height: 700px !important;
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=115240475770631";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" expr:href='data:post.url' expr:title='data:post.title' expr:xid='data:post.id' data-width="100%" data-numposts="5"></div>
+</body>
+</html>
